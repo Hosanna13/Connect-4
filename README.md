@@ -1,7 +1,7 @@
-#Technical Description:
-##Game Flow
+# Technical Description:
+## Game Flow
 First the game starts with a welcome message and setup information. Players then take turns clicking on a column to drop their pieces. Then the game checks for valid moves, updates the board, and switches to the next player. Then the program checks for a winning condition or a tie. If the game ends, then players are asked to play again or exit. 
-##Variable Names and Uses
+## Variable Names and Uses
 - welcome = string game welcome message later used in “disp” function. 
 - pieces = string message for users to let them know what pieces they are assigned to, later used in “disp” function, 
 - player1message = string message for player let them know that they are going first, latter used in the “disp” function.
@@ -14,8 +14,8 @@ First the game starts with a welcome message and setup information. Players then
 - currentplayer = player1 (used to switch between players starting with player one).
 - turncounter = 1; this is not used. 
 - gameover = determines if the game is over, set as 0, meaning false.
-##Function and Uses:
-###User Created Functions:
+## Function and Uses:
+### User Created Functions:
 - DropPiece(gameboard, currentPlayer, col): is designed to update the game board by placing a player’s piece in the lowest avail slot within a given column. 
 INPUTS: 
   - The input parameter is the gameboard(matrix) that represents the current state of the Connect Four game board. It’s a 6 x 7 matrix where each element shows the occupancy of a slot (1 for empty sprite, 2 for player 1, and 3 for player 2 piece). The variable ‘player’ represents the current player making a move. It takes the value of either 2 or 3, which corresponds to Player 1 or Player 2. The input ‘col’ gives the column index were the player wants to drop their piece, it is a value between 1 and 7. 
